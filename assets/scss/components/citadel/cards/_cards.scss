@@ -28,7 +28,7 @@
 .card-figure {
     margin-top: $card-figure-marginTop;
     position: relative;
-    padding: 3px;
+    padding: $card-figure-padding;
     overflow: hidden;
 
     &:hover {
@@ -39,7 +39,7 @@
         }
 
         .card-img-container {
-            transform: translateX(calc(-100% + -4px));
+            transform: translateX(calc(-100% - #{$card-figure-padding}));
         }
     }
 
@@ -83,7 +83,7 @@
 }
 
 .card-image-addl-preview {
-    left: calc(100% + 4px);
+    left: calc(100% + #{$card-figure-padding});
 }
 
 .card-title {
